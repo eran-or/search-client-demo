@@ -1,0 +1,240 @@
+{
+    "payload" : [{
+        "link":"https://reactjs.org/",
+        "title": "React – A JavaScript library for building user interfaces",
+        "description" : "React · Declarative. React makes it painless to create interactive UIs. · Component-Based. Build encapsulated components that manage their own state, then compose"
+    },{
+        "link":"https://en.wikipedia.org/wiki/React_(JavaScript_library)",
+        "title" : "React Native · Learn once, write anywhere",
+        "description" : "Create native apps for Android and iOS using React. React Native combines the best parts of native development with React, a best-in-class JavaScript library"
+    },{
+        "link":"https://github.com/facebook/react",
+        "title" : "React is a JavaScript library for building user interfaces. - GitHub",
+        "description" : "React is a JavaScript library for building user interfaces. Declarative: React makes it painless to create interactive UIs. Design simple views for each state"
+    },
+    {
+        "link":"https://reactnative.dev/",
+        "title" : "What is React - W3Schools",
+        "description" : "React is a JavaScript library created by Facebook. React is a User Interface (UI) library. React is a tool for building UI components"
+    },
+    {
+        "link":"https://www.w3schools.com/whatis/whatis_react.asp",
+        "title" : "React Tutorial - W3Schools",
+        "description" : "React is a JavaScript library for building user interfaces. React is used to build single-page applications. React allows us to create reusable UI "
+    },
+    {
+        "link":"https://www.w3schools.com/REACT/DEFAULT.ASP",
+        "title" : "Pluralsight - Learn React",
+        "description" : "Expert-led online learning for developers & IT professionals. Start learning today! Already have experience in React? We have courses for all skill levels. Certification Prep."
+    },{
+        "link":"https://create-react-app.dev/",
+        "title" : "Create React App",
+        "description" : "Whether you're using React or another library, Create React App lets you focus on code, not build tools. To create a project called my-app, run this command:."
+    },{
+        "link":"https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiUwaPftM76AhWEqdUKHYYGC6AYABAAGgJ3cw&ohost=www.google.com&cid=CAESbOD2LM8BQWRbajGKWrz4zmc334bS7m8ouV53cwAEbqa7wWfZVPoCnO1QOn3pwCpYYpx56Qn5VEeXkG8NisAXZfvCgC7n9V3eEscahAWQrWBy5Q2QSJgKPF68eFgAe8ImJ1arFc4napKfWqLRWQ&sig=AOD64_2XR8wfYxBI4fgFHszx5MoE5M0wZg&q&adurl&ved=2ahUKEwic9pvftM76AhV-R_EDHeQVCZU4ChDRDHoECAcQAQ",
+        "title" : "Getting started with React - Learn web development | MDN",
+        "description" : "19 Sept 2022 — As its official tagline states, React is a library for building user interfaces. React is not a framework – it's not even exclusive to the web."
+    },{
+        "link":"https://react-bootstrap.github.io/",
+        "title" : "React-Bootstrap · React-Bootstrap Documentation",
+        "description" : "The most popular front-end framework, rebuilt for React."
+    },{
+        "link":"https://web.dev/react/",
+        "title" : "The Complete Course (incl. React Router 4 & Redux) - Udemy",
+        "description" : "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!"
+    },{
+        "link":"https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
+        "title" : "React Router: Home v6.4.1",
+        "description" : "I'm New. Start with the tutorial. It will quickly introduce you to the primary features of React Router: from configuring routes, to loading and mutating data, ...You've visited this page 3 times. Last visit: 9/1/22"
+    },{
+        "link":"https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started",
+        "title" : "React - web.dev",
+        "description" : "React. Build performant and progressive React applications. Collection cover image. Overview. In this section you ..."
+    },{
+        "link":"https://reactrouter.com/",
+        "title" : "React - npm",
+        "description" : "14 Jun 2022 — React is a JavaScript library for building user interfaces.. Latest version: 18.2.0, last published: 4 months ago. Start using react in your"
+    }, {
+        "link":"https://mui.com/core/",
+        "title" : "Learn React | Codecademy",
+        "description" : "ReactJS offers graceful solutions to some of front-end programming's most persistent issues, allowing you to build dynamic and interactive web apps with ease."
+    },
+    {
+        "link":"https://www.cat.com/",
+        "title" : "Cat.com | Cat | Caterpillar",
+        "description" : "Welcome! Select a region and language to continue. Select a Region, Africa, Middle-East, Asia, Australia, New Zealand, Eurasia, Europe, Latin "
+    },
+    {
+        "link":"https://en.wikipedia.org/wiki/Cat",
+        "title":"Cat - Wikipedia",
+        "description" : "The cat (Felis catus) is a domestic species of small carnivorous mammal. ... It is the only domesticated species in the family Felidae and is commonly referred to"
+    },
+    {
+        "link":"https://www.caterpillar.com/",
+        "title":"Caterpillar | Caterpillar",
+        "description" :"From creating a gigantic Jenga to building a record-setting sandcastle, Cat® products and services help customers accomplish the incredible."
+    },{
+        "link":"https://www.catphones.com/",
+        "title":"Cat phones: Made Mighty",
+        "description":"Our comprehensive range of market-leading rugged smartphones are no different. Unlike traditional phones, Cat phones are engineered to work under extraordinary ."
+    },{
+        "link":"https://www.catfootwear.com/US/en/home",
+        "title":"Cat Footwear: Caterpillar Work Boots - Comfortable Work Shoes",
+        "description" :"Official Cat Footwear Site - Shop Caterpillar work boots, steel toe work boots & shoes along with casual shoes & casual boots. Free shipping!"
+    },{
+        "link":"https://en.wiktionary.org/wiki/cat",
+        "title":"cat - Wiktionary",
+        "description" : "NounEdit · A domesticated species (Felis catus) of feline animal, commonly kept as a house pet. [from 8thc.] quotations ▽ · Any similar animal of the family "
+    },
+    {
+        "link":"https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat",
+        "title" : "Domestic cat - National Geographic",
+        "description" : "As mostly nocturnal animals, cats have excellent vision and hearing, with ears that can turn like satellite dishes. Their reputation for having nine lives stems ."
+    },{
+        "link":"https://www.ohchr.org/en/treaty-bodies/cat",
+        "title" : "Committee against Torture - OHCHR",
+        "description" : "The Committee against Torture (CAT) is the body of 10 independent experts that monitors implementation of the Convention against Torture and Other Cruel, ..."
+    },{
+        "link":"https://www.britannica.com/animal/cat",
+        "title": "cat | Breeds & Facts - Encyclopedia Britannica",
+        "description" : "16 Aug 2022 — cat, (Felis catus), also called house cat or domestic cat, domesticated member of the family Felidae, order Carnivora, and the smallest"
+    },{
+        "link":"https://iimcat.ac.in/",
+        "title" : "Caterpillar Inc. (CAT) Stock Price, News, Quote & History",
+        "description" : "Find the latest Caterpillar Inc. (CAT) stock quote, history, news and other vital information to help you with your stock trading and investing."
+    },{
+        "link":"https://finance.yahoo.com/quote/CAT/",
+        "title" : "cat in Hebrew | Morfix Dictionary מילון ותרגום מורפיקס",
+        "description" : "Cat. חתול הבית. חתול הבית (שם מדעי: Felis silvestris catus) הוא יונק טורף מבוית, מהסוג חתול ממשפחת החתוליים. החתול נפוץ בכל יבשות העולם מלבד באנטארקטיקה."
+    },{
+        "link":"https://www.purina.com/cats/cat-breeds",
+        "title": "Caterpillar | Caterpillar",
+        "description" : "Cat Trial 13: Goodnight, Goodnight, Construction Site. From creating a gigantic Jenga to building a record-setting sandcastle, Cat® products and services help ..."
+    }, {
+        "link":"https://www.purina.com/cats/cat-breeds",
+        "title" : "CAT Group: Home",
+        "description" : "The C.A.T. Group is a world leader in the contracting industry serving a wide spectrum of sectors such as the Oil & Gas, Energy, Utilities, Civil, ..."
+    }, {
+        "link":"https://www.aspca.org/pet-care/cat-care/general-cat-care",
+        "title" : "General Cat Care | ASPCA",
+        "description" : "If you are considering adopting a cat, please visit your local shelter. We encourage you to browse our directory of adoptable cats in your area, or use our ..."
+    },{
+        "link":"https://www.aspca.org/pet-care/cat-care",
+        "title" : "Cat Care | Grooming | Nutrition | Disease | Behavior - ASPCA",
+        "description" : "Cat Care. Do you have a feline companion? We've got you covered. Our ASPCA veterinarians and behaviorists offer up tips, solutions and answers to some of ..."
+    },{
+        "link":"https://www.catgroup.net/",
+        "title" : "International Cat Care | For the love of cats",
+        "description" : "Join ISFM Membership and be at the forefront of feline veterinary care · Congress · Cat Health A-Z · Unowned Cats · Campaigns · Find A Vet · Popular Advice · Latest ..."
+    },
+    {
+        "link":"https://en.wikipedia.org/wiki/Dog",
+        "title": "Dog - Wikipedia",
+        "description":"The dog is a domesticated descendant of the wolf. Also called the domestic dog, it is derived from an ancient, extinct wolf, and the modern wolf is the ..."
+    },{
+        "link":"https://www.nationalgeographic.com/animals/mammals/facts/domestic-dog",
+        "title":"Dog (2022) - IMDb",
+        "description": "Two former Army Rangers are paired against their will on the road trip of a lifetime. Briggs (Channing Tatum) and Lulu (a Belgian Malinois) race down the ..."
+    },{
+        "link":"https://www.imdb.com/title/tt11252248/",
+        "title":"dog | History, Domestication, Physical Traits, Breeds, & Facts",
+        "description": "24 Aug 2022 — dog, (Canis lupus familiaris), domestic mammal of the family Canidae (order Carnivora). It is a subspecies of the gray wolf (Canis lupus) ..."
+    },{
+        "link":"https://www.rottentomatoes.com/m/dog_2022",
+        "title":"Dog, facts and photos - National Geographic",
+        "description":"Domestic dogs are mostly kept as pets, though many breeds are capable of surviving on their own, whether it's in a forest or on city streets. A third of all ..."
+    },{
+        "link":"https://www.britannica.com/animal/dog",
+        "title":"Dog - Rotten Tomatoes",
+        "description":"DOG is a buddy comedy that follows the misadventures of two former Army Rangers paired against their will on the road trip of a lifetime."
+    },{
+        "link":"https://www.dog.com/",
+        "title":"dog - Wiktionary",
+        "description":"Etymology 1Edit · hound (from Old English · hund) was the general word for all domestic canines, and dog referred to a subtype resembling the modern mastiff and ..."
+    },{
+        "link":"https://www.nytimes.com/2022/10/07/nyregion/dog-attack-park-slope-brooklyn.html",
+        "title":"Dog Supplies | Dog Products & Accessories - Dog.com",
+        "description":"Make Dog.com your source for dog supplies & accessories! Shop today for dog crates, beds, toys & treats at low everyday prices!"
+    },{
+        "link":"https://www.nytimes.com/2022/10/07/nyregion/dog-attack-park-slope-brooklyn.html",
+        "title":"How To Look After a Dog - Dog Facts - RSPCA",
+        "description":"But given that dogs have complex needs, our expert advice will help you ensure your dog is healthy and happy. Take a look around and learn more about caring for ..."
+    },{
+        "link":"https://www.washingtonpost.com/wellness/2022/10/07/dog-dental-care-teeth-brushing/",
+        "title":"Dogs | Healthy Pets, Healthy People | CDC",
+        "description":"Dogs can have many positive effects on the lives of their owners. They influence social, emotional, and cognitive development in children, promote an active ..."
+    },{
+        "link":"https://www.nytimes.com/2022/10/07/nyregion/dog-attack-park-slope-brooklyn.html",
+        "title":"Dog Health Center | Dog Care and Information from WebMD",
+        "description":"WebMD veterinary experts provide comprehensive information about dog health care, offer nutrition and feeding tips, and help you identify illnesses in dogs."
+    },{
+        "link":"https://www.washingtonpost.com/wellness/2022/10/07/dog-dental-care-teeth-brushing/",
+        "title":"Dog Definition & Meaning - Merriam-Webster",
+        "description":"Kids Definition of dog · 1 : a domestic animal that eats meat and is closely related to the wolves · 2 : any of the group of mammals (as wolves, foxes, and ..."
+    },{
+        "link":"https://www.theguardian.com/world/2022/oct/06/pebbles-worlds-oldest-dog-dies",
+        "title":"Dogs Trust: Dogs Rehoming & Dog Rescue Charity",
+        "description":"Dogs Trust is the UK's largest Dog Welfare Charity. Looking to rehome a rescue dog or to donate to an animal charity? Visit us today to find out more!"
+    },{
+        "link":"https://www.unitedartistsreleasing.com/dog/",
+        "title":"DOG | meaning, definition in Cambridge English Dictionary",
+        "description":"dog definition: 1. a common animal with four legs, especially kept by people as a pet or to hunt or guard things…. Learn more."
+    },{
+        "link":"https://www.unitedartistsreleasing.com/dog/",
+        "title":"List of Dog Breeds - Petfinder",
+        "description":"Browse our list of 232 dog breeds to find the perfect dog breed for you, and then find adoptable dogs and dog shelters close to you."
+    },{
+        "link":"https://www.cnn.com/2022/10/06/health/petting-dogs-brain-study-wellness-scn/index.html",
+        "title":"Dogs up for adoption | Lost Dogs Home",
+        "description":"Our beautiful animals are waiting for you! All dogs are health checked, microchipped and vaccinated. Affordable fees and discounted training!"
+    },{
+        "link":"https://www.cdc.gov/healthypets/pets/dogs.html",
+        "title":"Dog | Official Website | February 18 2022",
+        "description":"Watch the trailer, find screenings & book tickets for Dog on the official site. In theaters February 18 2022 brought to you by United Artists Releasing."
+    },{
+        "link":"https://www.rspca.org.uk/adviceandwelfare/pets/dogs",
+        "title": "Translate ref to Hebrew | Morfix English Hebrew Dictionary",
+        "description": "Hebrew translation result for: ref · יש לך מבחן באנגלית? · שוב חזרת לתרגם את אותה המילה? · איזה כיף שנרשמתם למורפיקסקול · כמשתמשים רשומים תוכלו לשמור על ההתקדמות ..."
+    },{
+        "link":"https://www.morfix.co.il/en/ref",
+        "title":"Translate ref to Hebrew | Morfix English Hebrew Dictionary",
+        "description":"Hebrew translation result for: ref · יש לך מבחן באנגלית? · שוב חזרת לתרגם את אותה המילה? · איזה כיף שנרשמתם למורפיקסקול · כמשתמשים רשומים תוכלו לשמור על ההתקדמות"
+    },{
+        "link":"https://reactjs.org/docs/refs-and-the-dom.html",
+        "title":"Refs and the DOM - React",
+        "description":"Refs provide a way to access DOM nodes or React elements created in the render method. In the typical React dataflow, props are the only way that parent ..."
+    },
+    {
+        "link":"https://support.microsoft.com/he-il/office/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%AA%D7%A7%D7%9F-ref-%D7%A9%D7%92%D7%99%D7%90%D7%94-822c8e46-e610-4d02-bf29-ec4b8c5ff4be",
+        "title":"כיצד לתקן #REF! שגיאה - Microsoft Support",
+        "description":"השגיאה #REF! מוצגת כאשר נוסחה מפנה לתא שאינו חוקי. מצב זה מתרחש בדרך כלל כאשר תאים שנוסחאות הפנו אליהם נמחקים או שמודבק מעל התוכן שלהם תוכן אחר."
+    },{
+        "link":"https://www.ref.finance/",
+        "title":"Ref.finance",
+        "description":"LOW FEES<$0.01Near's Transaction Fees. LIGHTNING FAST1-2STransaction Finality. GROWING FAST$4.7BAccumulative Trading Volume. TOP TOKENS. USDT. Locked95.47M."
+    },{
+        "link":"https://www.collinsdictionary.com/dictionary/english/ref",
+        "title":"Ref definition and meaning | Collins English Dictionary",
+        "description":"1. Ref. is an abbreviation for reference. It is written in front of a code at the top of business letters and documents. The code refers to a file where all the"
+    },{
+        "link":"https://www.ref.ac.uk/",
+        "title":"REF 2021: Home",
+        "description":"Assessment of the research environment in REF should focus on the university, instead of discipline level, recommends the panel that has been piloting a new"
+    },{
+        "link":"https://www.macmillandictionary.com/dictionary/british/ref_2",
+        "title":"REF. (abbreviation) definition and synonyms",
+        "description":"Definition of REF. (abbreviation): used for referring to specific document."
+    },{
+        "link":"https://www.dictionary.com/browse/ref",
+        "title":"Ref Definition & Meaning - Dictionary.com",
+        "description":"Ref is an informal and shortened way of referring to a referee, an official in a sporting event who enforces the rules of the game."
+    },{
+        "link":"https://context.reverso.net/%D7%AA%D7%A8%D7%92%D7%95%D7%9D/%D7%90%D7%A0%D7%92%D7%9C%D7%99%D7%AA-%D7%A2%D7%91%D7%A8%D7%99%D7%AA/ref",
+        "title":"ref - תרגום לעברית - דוגמאות אנגלית - Reverso Context",
+        "description":"תרגומים בהקשר של 'ref' אנגלית-עברית מתוך Reverso Context: Nobody ever paid to see you ref."
+    },{
+        "link":"https://www.merriam-webster.com/dictionary/ref",
+        "title":"Ref Definition & Meaning - Merriam-Webster",
+        "description":"The meaning of REF is a referee in a game or sport."
+    }]
+}
