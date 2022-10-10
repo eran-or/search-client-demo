@@ -40,6 +40,8 @@ const router = createBrowserRouter([
   basename: process.env.PUBLIC_URL
 });
 
+console.log(process.env.PUBLIC_URL);
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
