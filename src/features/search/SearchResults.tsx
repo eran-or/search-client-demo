@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import type {LoaderFunction} from "react-router-dom"
-import {fetchResults, Result} from './searchAPI'
-import {db} from '../../base/services/db'
+import {fetchResults, addSearchQuery} from '../../base/services/api'
+import {Result} from '../../base/services/db'
+import Paggination from "../paggination/Paggination";
 
 type LoaderData = {
   totalResults: number;
@@ -13,9 +14,13 @@ export const loader: LoaderFunction = async ({
   params
 }) => {
   const url = new URL(request.url)
-  const q = new URLSearchParams(url.search).get('q') as string
-  db.search.put({query:q}).then(res=>console.log(res)).catch(e=>console.log("error:",e))
-  const resutls = q&&fetchResults({q, limit:7, offset:0})
+  const searchParams = new URLSearchParams(url.search)
+  const q = searchParams.get('q') as string
+  // const start = searchParams.get('start') as unknown as number
+  
+  
+  addSearchQuery(q)
+  const resutls = q&& await fetchResults({q, limit:100, offset:0})
   return resutls
 }
 
@@ -36,5 +41,6 @@ const handleClick = (link:string)=>{
         <p>{item.description}</p>
       </div>
     })}
+    <Paggination itemsPerPage={2} totalItems={data.totalResults} />
   </div>;
 }

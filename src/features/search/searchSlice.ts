@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
-import { fetchResults } from "./searchAPI";
-import type { Result } from "./searchAPI";
+import { fetchResults } from "./../../base/services/api";
+import type { Result } from "./../../base/services/db";
 
 export interface SearchState {
   data: Result[];

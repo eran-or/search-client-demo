@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 declare module "react" {
     function forwardRef<T, P = {}>(
       render: (props: P, ref: React.Ref<T>) => React.ReactElement | null
@@ -18,7 +18,8 @@ interface Props {
 }
 
 function SearchBox ({onChange, children, show, onFocus, onBlur, onClick, boxRef, onKeyPress}:Props, ref:React.ForwardedRef<HTMLInputElement>) {
-  
+  const offsetRef = useRef(0)
+
   return (
     <div className="w-[32rem] relative drop-shadow rounded border bg-white">
       <input className="w-full h-10 border rounded px-2 bg-white"
@@ -35,10 +36,9 @@ function SearchBox ({onChange, children, show, onFocus, onBlur, onClick, boxRef,
           autoComplete="off"
           onBlur={onBlur}
           aria-hidden={false} />
-   
+          {/* <input type="hidden" name='start' aria-hidden={false} value={offsetRef.current} /> */}
         {show&&<div ref={boxRef} className="w-full max-h-[260px] p-3 overflow-hidden bg-white absolute">
           {children}
-          <button type='submit'>search</button>
         </div>}
    </div>
   )

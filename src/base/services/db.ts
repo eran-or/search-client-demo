@@ -1,4 +1,5 @@
 import Dexie, { Table } from 'dexie';
+import seed from './data.json' 
 
 export interface SearchEntry {
   id?: number;
@@ -6,36 +7,32 @@ export interface SearchEntry {
   showClock?: boolean;
 }
 
+export interface Result {
+    link:string;
+    title:string;
+    description: string;
+  }
 export class MySubClassedDexie extends Dexie {
   
-  search!: Table<SearchEntry>; 
+  queries!: Table<SearchEntry>;
+  results!: Table<Result>
+   
 
   constructor() {
     super('myDatabase');
+    this.on("populate", function(transaction) {
+      const data = seed.payload
+      data.map(_=>db.results.add(_))
+    })
     this.version(1).stores({
-        search: '++id, query' // Primary key and indexed props
+        queries: '++id, query' // Primary key and indexed props
+    });
+    this.version(1).stores({
+        results: '++id, link, title, description' // Primary key and indexed props
     });
   }
 }
 
-
-export const getSearchItems = async () => {
-    let collection: { [key: string]: SearchEntry } = {};
-    return (
-        await db.search.toCollection().toArray((arr) => arr)
-      ).reduce((acc: SearchEntry[], next: SearchEntry) => {
-        if (!collection[next.query]) {
-          next.showClock = true;
-          collection[next.query] = next;
-          acc.push(next);
-        }
-        return acc;
-      }, [])
-}
-
-export const deleteSearchItem = async (value:string) => {
-    let deleteCount = db.search.where("query").equalsIgnoreCase(value).delete()
-    return  deleteCount   
-}
-
 export const db = new MySubClassedDexie();
+db.open();
+

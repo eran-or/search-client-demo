@@ -1,17 +1,14 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import {
-  useNavigate,
-  useLoaderData,
-  Form,
-} from "react-router-dom";
+import { useNavigate, useLoaderData, Form } from "react-router-dom";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import { TiDelete } from 'react-icons/ti'
+import { TiDelete } from "react-icons/ti";
 
 import type { LoaderFunction } from "react-router-dom";
 import { debounce } from "debounce";
-import { fetchResults } from "./searchAPI";
+import { fetchResults } from "../../base/services/api";
 import SearchBox from "../auto-complete/SearchBox";
-import { deleteSearchItem, getSearchItems, SearchEntry } from "../../base/services/db";
+import { deleteSearchItem, getSearchItems } from "../../base/services/api";
+import { SearchEntry } from "../../base/services/db";
 import { searchSorter } from "../../base/services/search";
 
 type LoaderData = {
@@ -19,8 +16,6 @@ type LoaderData = {
   items: SearchEntry[];
 };
 export const loader: LoaderFunction = async ({ request, params }) => {
-  
-  
   const url = new URL(request.url);
   const q = new URLSearchParams(url.search).get("q") as string;
   let value = (q || "").trim();
@@ -52,7 +47,6 @@ function SearchForm() {
   const [items, setItems] = useState<SearchEntry[]>(data.items);
   const [isOpen, setIsOpen] = useState(false);
   const deleteRef = useRef<HTMLDivElement>(null);
-
   const handleChange = debounce(
     async (e: React.ChangeEvent<HTMLInputElement>) => {
       const q = e.target.value.trim();
@@ -87,22 +81,25 @@ function SearchForm() {
     // eslint-disable-next-line
   }, []);
 
-  const handleClick = async (value: string, e?:React.MouseEvent<HTMLElement>) => {
-    let isDelete = deleteRef.current?.contains((e?.target as HTMLElement))
+  const handleClick = async (
+    value: string,
+    e?: React.MouseEvent<HTMLElement>
+  ) => {
+    let isDelete = deleteRef.current?.contains(e?.target as HTMLElement);
     setIsOpen(false);
-    if(!isDelete){
+    if (!isDelete) {
       return navigate(`/search?q=${value}`);
-    }else{
-      const deleteCount = await deleteSearchItem(value)
-      if(deleteCount){
-        setItems(items.filter(item=>item.query!==value))
+    } else {
+      const deleteCount = await deleteSearchItem(value);
+      if (deleteCount) {
+        setItems(items.filter((item) => item.query !== value));
       }
     }
   };
-  
+
   const handleOnBlur = (e: React.FocusEvent<HTMLInputElement>) => {
-    const isBoxClicked = boxRef.current?.contains(e.relatedTarget)
-    if(!isBoxClicked){
+    const isBoxClicked = boxRef.current?.contains(e.relatedTarget);
+    if (!isBoxClicked) {
       setIsOpen(false);
     }
   };
@@ -115,13 +112,13 @@ function SearchForm() {
     }
     setIsOpen(true);
   };
-  
-  const handleKeyPress = (e:React.KeyboardEvent<HTMLInputElement>)=>{
-    if(e.code === "Enter"){
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.code === "Enter") {
       setIsOpen(false);
     }
-  }
-  
+  };
+
   return (
     <Form
       method="get"
@@ -153,7 +150,9 @@ function SearchForm() {
                   >
                     <AiOutlineClockCircle className="text-gray-400" />{" "}
                     <div className="text-violet-400 ml-1">{value}</div>
-                    <div  className="ml-auto" ref={deleteRef}><TiDelete/></div>
+                    <div className="ml-auto" ref={deleteRef}>
+                      <TiDelete />
+                    </div>
                   </div>
                 ) : (
                   <div

@@ -10,8 +10,8 @@ import {
 } from "react-router-dom";
 import Home from "./routes/home";
 import {loader as formLoader} from "./features/search/SearchForm";
-
 import SearchResults , {  loader as searchResultsLoader } from "./features/search/SearchResults";
+
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         path: "search",
         element: <SearchResults />,
         loader: searchResultsLoader,
-      },
+      }
     ],
   },
 ],{
