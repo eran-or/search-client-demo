@@ -1,10 +1,6 @@
 import {db, Result, SearchEntry} from './db' 
 import {searchSorter} from '../../base/services/search'
-const getSlice = <T>(items:T[], limit:number, offset:number):T[] => {
 
-  
-  return items.slice(offset, offset+limit)
-}
 export const fetchResults = async ({q, limit, offset}:{q: string, limit:number, offset:number}) => {
   return (async () => {
     const t0 = performance.now();
@@ -34,7 +30,6 @@ export const deleteSearchItem = async (value:string) => {
     let deleteCount = db.queries.where("query").equalsIgnoreCase(value).delete()
     return  deleteCount   
 }
-
 
 export const addSearchQuery = (q:string | null) => {
   return q ? db.queries.put({query:q}) : null
