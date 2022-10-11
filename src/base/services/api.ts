@@ -36,6 +36,6 @@ export const deleteSearchItem = async (value:string) => {
 }
 
 
-export const addSearchQuery = (q:string) => {
-    db.queries.put({query:q})
+export const addSearchQuery = (q:string | null) => {
+  return q ? db.queries.put({query:q}) : null
 }
