@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function range(start: number, end: number) {
   let arr = [];
@@ -55,56 +55,13 @@ export default function Paggination({
   }, [setRangeSlice, rangeSize, itemsPerPage, location, totalItems]);
 
   const adjacentPage = (num: number) => {
-    console.log(currentPage);
-    
     setPageParam(currentPage + num)
-    // const end = endRef.current;
-    // const start = startRef.current;
-    // function updateRange() {
-    //   startRef.current += num;
-    //   endRef.current += num;
-    //   setRangeSlice(range(startRef.current, endRef.current));
-    // }
-    
-    // if (end < totalPages && num > 0) {
-    //   updateRange();
-    // }
-    // if (start > 1 && num < 0) {
-    //   updateRange();
-    // }
   };
 
   const handleClick = (num: number) => {
     setPageParam(num)
-    // const diff = num - currentPage;
-    // const end = endRef.current + diff;
-    // const start = startRef.current + diff;
-
-    // if (num > currentPage) {
-    //   if (end <= totalPages) {
-    //     endRef.current = endRef.current + diff;
-    //     startRef.current = startRef.current + diff;
-    //     setRangeSlice(range(start, end));
-    //   } else {
-    //     startRef.current = totalPages - rangeSize + 1;
-    //     endRef.current = totalPages;
-    //     setRangeSlice(range(startRef.current, endRef.current));
-    //   }
-    // }
-    // if (num < currentPage) {
-    //   if (start >= 1) {
-    //     startRef.current = startRef.current + diff;
-    //     endRef.current = endRef.current + diff;
-    //     setRangeSlice(range(startRef.current, endRef.current));
-    //   } else {
-    //     startRef.current = 1;
-    //     endRef.current = rangeSize;
-    //     setRangeSlice(range(startRef.current, endRef.current));
-    //   }
-    // }
   };
   const totalPages = Math.ceil(totalItems / itemsPerPage);
-  
   
   return (
     <div className="flex items-center justify-center">
